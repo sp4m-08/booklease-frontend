@@ -3,13 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    cursor: none !important;
+}
 html,
 body {
-    
-
     font-family: "Manrope", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
+    
 }
 
 code {
@@ -30,3 +32,8 @@ code {
             pointer-events: none;
             z-index: 500;         
 }
+
+.hover-tilt:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+

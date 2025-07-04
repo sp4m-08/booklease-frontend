@@ -5,8 +5,8 @@ const Booklistings = () => {
   return (
     <div style={{ position: "relative", zIndex: 500 }}>
         <Spacer height={150} />
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(360px,1fr))] gap-x-12 gap-y-8 px-4 max-w-[1440px] mx-auto">
 
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-x-[100px] gap-y-[4px] p-0 place-items-center max-w-[1300px] mx-auto">
           <BookCard2
             postedBy="Saunok Roy"
             title="Lorem ipsum dolor sit"

@@ -6,6 +6,7 @@ import Aurora from "../Components/Background/Aurora";
 import Navbar from "../Components/Navbar";
 import Spacer from "../Components/Spacer";
 import Booklistings from "../App/Landing/Booklistings";
+import CustomCursor from "../Components/CustomCursor";
 
 function Landing() {
   const [gradientOpacity, setGradientOpacity] = useState(0);
@@ -28,6 +29,7 @@ function Landing() {
 
   return (
     <div>
+       <CustomCursor />
       <div style={{ position: "relative" }}>
         <Aurora
           colorStops={["#2D9BA7", "#2DA784", "#2DA77C"]}
