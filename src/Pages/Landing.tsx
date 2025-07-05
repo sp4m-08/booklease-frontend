@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import Noise from "../Components/Background/Noise";
-import BookCard2 from "../Components/BookCard";
 import Aurora from "../Components/Background/Aurora";
 import Navbar from "../Components/Navbar";
-import Spacer from "../Components/Spacer";
 import Booklistings from "../App/Landing/Booklistings";
 import CustomCursor from "../Components/CustomCursor";
 
@@ -63,11 +61,13 @@ function Landing() {
           patternScaleX={1}
           patternScaleY={1}
           patternRefreshInterval={2}
-          patternAlpha={15}
+          patternAlpha={10}
         />
       </div>
 
       <Booklistings/>
+
+
 
       
     </div>
