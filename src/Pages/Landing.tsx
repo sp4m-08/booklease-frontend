@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import Noise from "../Components/Background/Noise";
 import Aurora from "../Components/Background/Aurora";
 import Navbar from "../Components/Navbar";

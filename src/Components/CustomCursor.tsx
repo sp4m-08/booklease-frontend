@@ -13,20 +13,19 @@ const CustomCursor: React.FC = () => {
   }, []);
 
   return (
-    <div
+    <img
+      src="/cursor.svg"
+      alt="Custom Cursor"
       style={{
         position: "fixed",
         top: position.y,
         left: position.x,
-        width: "20px",
-        height: "20px",
-        borderRadius: "9999px",
-        backgroundColor: "#2DA77C",
+        width: "32px",
+        height: "32px",
         pointerEvents: "none",
-        transform: "translate(-50%, -50%)",
+        transform: "translate(-10px, -6px)", // adjust to match SVG arrow tip
         zIndex: 9999,
         transition: "transform 0.05s ease-out",
-        mixBlendMode: "normal", // optional effect
       }}
     />
   );
