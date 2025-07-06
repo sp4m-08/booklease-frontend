@@ -33,6 +33,11 @@ code {
             z-index: 500;         
 }
 
+.hover-tilt {
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
 .hover-tilt:hover {
   transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
 }

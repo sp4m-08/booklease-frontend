@@ -1,7 +1,7 @@
 import React from "react";
 import Booklistings from "../App/Landing/Booklistings";
 
-const Landing = () => {
+const Listings = () => {
   return (
     <div className="w-full h-full">
       <Booklistings />
@@ -9,4 +9,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Listings;

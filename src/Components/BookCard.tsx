@@ -18,7 +18,7 @@ const BookCard2: React.FC<BookCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="flex flex-col w-full max-w-[450px] mx-auto my-10">
+<div className="flex flex-col w-full max-w-[450px] mx-auto my-6 sm:my-10 transform scale-[0.90] sm:scale-100 transition-transform duration-300 ease-in-out">
       <div className="h-[500px] p-6 w-full flex flex-col items-start bg-gradient-to-tr from-[#0c0c22] via-[#101024] to-[#14142a] rounded-2xl transition duration-300 ease-in-out transform hover:bg-gradient-to-tr hover:from-[#11112e] hover:via-[#101024] hover:to-[#111127] hover-tilt">
         <div
           className="h-[500px] w-full border border-[#060010] rounded-[8px] bg-[#060010] bg-cover bg-center"

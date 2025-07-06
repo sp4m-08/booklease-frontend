@@ -43,35 +43,35 @@ const Footer: React.FC = () => {
 
           <div className="flex space-x-4 text-white text-xl">
             <a
-              href="#"
+              href="https://x.com/iste_vitvellore"
               aria-label="Twitter/X"
               className="hover:text-[#2DA77C] transition-colors"
             >
               <FaXTwitter />
             </a>
             <a
-              href="#"
+              href="https://github.com/ISTE-VIT"
               aria-label="GitHub"
               className="hover:text-[#2DA77C] transition-colors"
             >
               <FaGithub />
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/c/istevitvellore"
               aria-label="YouTube"
               className="hover:text-[#2DA77C] transition-colors"
             >
               <FaYoutube />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/indian-society-for-technical-education/posts/?feedView=all"
               aria-label="LinkedIn"
               className="hover:text-[#2DA77C] transition-colors"
             >
               <FaLinkedin />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/iste_vit_vellore/?hl=en"
               aria-label="Instagram"
               className="hover:text-[#2DA77C] transition-colors"
             >

@@ -4,9 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 interface PrimaryButtonProps {
   text: string;
   url: string;
+  iconUrl?: string; // optional icon
 }
 
-const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text, url }) => {
+const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text, url, iconUrl }) => {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -14,14 +15,20 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text, url }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => (window.location.href = url)}
-      className="relative flex items-center justify-center gap-[64px] rounded-[215px] px-[48px] py-[24px] overflow-hidden text-white text-[15px] transition-all duration-300 backdrop-blur-[12px] bg-[#2DA77C80]"
+      className="relative flex items-center justify-center 
+                 gap-2 sm:gap-[16px] 
+                 px-4 sm:px-[48px] 
+                 py-[24px]
+                 min-w-[100px]
+                 rounded-[215px] overflow-hidden 
+                 text-white text-[15px] transition-all duration-300 
+                 backdrop-blur-[12px] bg-[#2DA77C80]"
       style={{
         outline: "0.01px solid #8CFFC580",
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
       }}
     >
-      {/* Hover Glow */}
       <AnimatePresence>
         {hovered && (
           <motion.div
@@ -41,7 +48,16 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text, url }) => {
         )}
       </AnimatePresence>
 
-      {/* Text Animation */}
+      {/* Icon (if provided) */}
+      {iconUrl && (
+        <img
+          src={iconUrl}
+          alt="icon"
+          className="w-5 h-5 sm:w-[20px] sm:h-[20px] object-contain relative z-10 shrink-0"
+        />
+      )}
+
+      {/* Text */}
       <motion.span
         animate={{
           scaleX: hovered ? 1.08 : 1,
