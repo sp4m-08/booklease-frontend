@@ -4,6 +4,7 @@ import Aurora from "../Components/Background/Aurora";
 import Navbar from "../Components/Navbar";
 import Booklistings from "../App/Landing/Booklistings";
 import CustomCursor from "../Components/CustomCursor";
+import Footer from "../Components/Footer"; // ⬅️ Add this
 
 function Landing() {
   const [gradientOpacity, setGradientOpacity] = useState(0);
@@ -25,8 +26,8 @@ function Landing() {
   }, []);
 
   return (
-    <div>
-       <CustomCursor />
+    <div className="min-h-screen flex flex-col bg-[#060010]">
+      <CustomCursor />
       <div style={{ position: "relative" }}>
         <Aurora
           colorStops={["#2D9BA7", "#2DA784", "#2DA77C"]}
@@ -37,7 +38,7 @@ function Landing() {
         <Navbar />
       </div>
 
-      {/* 🌈 Gradient overlay that fades in on scroll */}
+      {/* 🌈 Gradient overlay */}
       <div
         style={{
           position: "fixed",
@@ -64,11 +65,11 @@ function Landing() {
         />
       </div>
 
-      <Booklistings/>
+      <div className="flex-grow">
+        <Booklistings />
+      </div>
 
-
-
-      
+      <Footer /> {/* ⬅️ Add footer here */}
     </div>
   );
 }
